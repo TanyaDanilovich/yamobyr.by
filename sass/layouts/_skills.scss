@@ -1,0 +1,128 @@
+.skills{
+	//background-color: $color-text;
+	background: url("..//..//asetss/images/skills/_DSC3951.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	padding: 60px 0;
+	&::before{
+		content: "";
+		background-color: rgba($color: #445157, $alpha: 0.75);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		//z-index: 1;
+	}
+}
+
+.skills__title{
+	width: 50%;
+	line-height: 5rem;
+	margin: 0 auto;
+	text-align: center;
+	color: $white-color;
+}
+.skills__content{
+	max-width: 1200px;
+}
+.skills__item-text{
+	font-size: 1.4rem;
+	color: $white-color;
+	text-align: center;
+	padding-bottom: 50px;
+}
+h3{
+	color: $contrast-color;
+}
+.skills-grid{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	//align-items: center;
+	margin: auto;
+	//margin: auto;
+}
+
+.skills__item{
+margin: auto;
+color: $white-color;
+//text-align: center;
+}
+.skills__item__inner{
+	//border:  1px solid red;
+	display: flex;
+	position: relative;
+	width: calc(50% - 10px);
+}
+.skills-svg{
+	width: 60px;
+	height: 60px;
+	//width: 100%;
+	display: block;
+	background-color: $contrast-color;
+	border-radius: 50%;
+	align-self: center;
+}
+.skills__inner__title{
+	font-weight: 500;
+	padding-bottom: 15px;
+}
+.skills__inner__content__item{
+	color: $white-color;
+	font-size: 1.4rem;
+}
+.skills__inner__content{
+	padding: 20px 0 20px 20px;
+	width: calc(100% - 60px);
+}
+.reward::before{
+	content: " ";
+	width: 30px;
+	height: 30px;
+	background-image: url("..//..//asetss/icons/reward.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	position: absolute;
+	top: calc(50% - 15px);
+	left: 15px;
+}
+.schedule::before{
+	content: " ";
+	width: 30px;
+	height: 30px;
+	background-image: url("..//..//asetss/icons/schedule.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	position: absolute;
+	top: calc(50% - 15px);
+	left: 15px;
+}
+.briefcase::before{
+	content: " ";
+	width: 30px;
+	height: 30px;
+	background-image: url("..//..//asetss/icons/briefcase.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	position: absolute;
+	top: calc(50% - 15px);
+	left: 15px;
+}
+.handshake::before{
+	content: " ";
+	width: 30px;
+	height: 30px;
+	background-image: url("..//..//asetss/icons/Handshake.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	position: absolute;
+	top: calc(50% - 15px);
+	left: 15px;
+}

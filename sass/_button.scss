@@ -1,0 +1,38 @@
+.link__button{
+
+}
+.button{
+	font-family: "Hind", Sans-serif;
+   font-size: 1.4rem;
+   font-weight: 600;
+   text-transform: uppercase;
+   font-style: normal;
+   text-decoration: none;
+   letter-spacing: 0.5px;
+	color: $white-color;
+	cursor: pointer;
+	border: none;
+	&:hover{
+		transition: all 0.5s;
+	}
+padding: 13px 20px 10px 20px;
+border-radius: 3px;
+}
+.button-dark{
+	background-color: $black-color;
+	&:hover{
+		background-color: $contrast-color;
+	}
+}
+
+.button-colored{
+	background-color: $contrast-color;
+	&:hover{
+		background-color: $black-color;
+	}
+}
+.button__container{
+	display: flex;
+	justify-content: center;
+	
+}

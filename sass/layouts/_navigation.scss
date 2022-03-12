@@ -1,0 +1,29 @@
+.navigation__content{
+	margin-top: 15px;
+	background-color: $contrast-color;
+	
+}
+.menu{
+	display: flex;
+	flex-direction: row;
+	margin-left: 15px;
+	& li:first-child{
+		background-color: $black-color;
+	}
+}
+
+.menu__element{
+	color: $white-color;
+	padding: 15px 13px 14px 14px;
+	font-family: Archivo, sans-serif;
+	font-weight: bold;
+	letter-spacing: 00.5px;
+	cursor: pointer;
+	&:hover{
+		background-color: $black-color;
+		transition: all 1s;
+	}
+}
+.menu-link{
+	color: $white-color;
+}

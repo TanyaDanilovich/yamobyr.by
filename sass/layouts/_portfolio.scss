@@ -1,0 +1,10 @@
+.portfolio-image__container{
+	padding: 40px 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.portfolio-image{
+width: calc(33.33% - 20px);
+
+}

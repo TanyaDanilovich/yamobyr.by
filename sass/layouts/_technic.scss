@@ -1,0 +1,37 @@
+.technic-image__container{
+//text-align: center;
+}
+.technic__title{
+	text-align: center;
+}
+.technic__description{
+	text-align: center;
+	padding-bottom: 20px;
+}
+.technic__item{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.technic-image__container{
+	width: calc(50% - 50px);
+	margin: 0 auto;
+}
+.technic-img{
+	width: 100%;
+}
+.specifications{
+	text-align: left;
+   color: $color-dark;
+   font-family: "Open Sans", Sans-serif;
+   font-size: 1.5rem;
+   font-weight: 400;
+   line-height: 1.643em;
+   letter-spacing: 0px;
+}
+.specifications-text{
+	display: block;
+}
+.technic__button{
+	margin: 30px 20%;
+}

@@ -1,0 +1,49 @@
+.price{
+	background-color: $color-dark;
+	color: $white-color;
+	padding: 20px 0 40px;
+}
+.price__title{
+	color: $contrast-color;
+	font-weight: 500;
+	letter-spacing: 2px;
+}
+.price-table{
+	margin: 0 auto 30px;
+}
+th{
+	padding: 15px;
+	border: 2px solid $white-color;
+	letter-spacing: 1px;
+}
+td{
+	border: 2px solid $white-color;
+	text-align: center;
+}
+.price-table{
+	border-collapse: collapse;
+}
+.price__additional__text{
+	
+}
+.price-item{
+	position: relative;
+	padding: 10px 50px;
+	color: $white-color;
+	font-size: 1.3rem;
+	letter-spacing: 1px;
+	&::before{
+		content: " ";
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background-color: $white-color;
+		position: absolute;
+		top: 14px;
+		left: 30px;
+	}
+	&:last-child::before{
+				top: 20px;
+			}
+}
+

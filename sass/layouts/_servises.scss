@@ -1,0 +1,36 @@
+.servises__content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.servises__item{
+	line-height: 3rem;
+	color: $color-secondary;
+}
+.layout-3-column{
+	margin: 30px auto 20px auto;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.layout-3-column__content{
+	margin: 0 auto;
+	width: calc(30% - 10px);
+}
+
+.servises-images{
+	margin: 0 auto;
+}
+
+.layout-3-item{
+	text-align: center;
+}
+.servises__item__content{
+	padding: 15px 15px;
+	color: $color-dark;
+	font-weight: 600;
+}
+.servises__button{
+	margin: 10px 20px 40px 20px;
+
+}
