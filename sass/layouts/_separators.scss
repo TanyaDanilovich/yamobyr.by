@@ -40,9 +40,10 @@
 	width: 100%;
 	display: flex;
 	//flex-shrink: 1;
-	//justify-content: space-around;
+	//flex-grow: 1;
+	//flex-basis: calc(100% / 9);
+	//min-width: 5%;
 }
 .separator-smoll-image__elem{
-	display: block;
-	flex-shrink: 1;
-	}
+	width: calc(100%/9);
+		}

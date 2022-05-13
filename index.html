@@ -373,21 +373,23 @@
 			<div class="wrapper contacts-wrapper">
 				<div class="contacts-column">
 					<h4 class="column-title">КОНТАКТНАЯ ИНФОРМАЦИЯ</h4>
-					<p class="ip">Индивидуальный предприниматель</p>
-					<p>Данилович Александр Иванович</p>
-					<p>Республика Беларусь</p>
-					<p>Минская облась, Минский район</p>
-					<p>д. Ярково д. 20</p>
-					<p>УНП 390053113</p>
-					<h4>Наши контактные телефоны</h4>
-					<p>+375 29 694 96 98</p>
-					<p>+375 33 694 96 98</p>
-					<p>miniarenda@mail.ru</p>
+					<h6 class="ip">Индивидуальный предприниматель</h6>
+					<p class="contacts__item surname">Данилович Александр Иванович</p>
+					<p class="contacts__item">Республика Беларусь</p>
+					<p class="contacts__item">Минская облась, Минский район</p>
+					<p class="contacts__item">д. Ярково д. 20</p>
+					<p class="contacts__item">УНП 390053113</p>
+					<h6>Наши контактные телефоны</h6>
+					<p class="contacts__item"><a class="tel" href="tel:+375296949698">+375 29
+							694-96-98</a></p>
+					<p class="contacts__item"><a class="tel" href="tel:+375336949698">+375 33
+							694-96-98</a></p>
+					<p class="contacts__item miniarenda">miniarenda@mail.ru</p>
 				</div>
 				<div class="contacts-column">
 					<form action="" method="get" name="contact__form"></form>
 					<h4 class="column-title">ОТПРАВИТЬ СООБЩЕНИЕ</h4>
-					<p>Если у Вас остались вопросы, на которые Вы не нашли ответа - напишите нам. <br>
+					<p class="contacts__item">Если у Вас остались вопросы, на которые Вы не нашли ответа - напишите нам. <br>
 						За этой формой не обычный консультант, а настоящая человеческая поддержка, так что задавайте любые
 						вопросы - мы обязательно поможем.</p>
 					<label for="names">Ваше имя *</label>
@@ -398,8 +400,8 @@
 					<input type="email" name="e-mail" id="client-email"
 						placeholder="Со мной можно связаться по электронной почте">
 					<label for="message">Ваше сообщение *</label>
-					<textarea name="messege" id="client-mwssage" cols="30" rows="10" placeholder="У меня вопрос"></textarea>
-					<button type="submit" class="button-colored form__button">Отправить</button>
+					<textarea name="message" id="client-message" cols="30" rows="6" placeholder="У меня вопрос"></textarea>
+					<button type="submit" class="button button-colored form__button">Отправить</button>
 				</div>
 			</div>
 		</section>
@@ -421,53 +423,57 @@
 			<div class="footer-top footer__item">
 				<div class="footer-top__column">
 					<h5>YAMOBYR.BY</h5>
-					<p>Аренда ямобура по выгодным ценам</p>
-					<p>Огромный опыт в буровых работах</p>
-					<p>+375 29 694 96 98</p>
-					<p>+375 33 694 96 98</p>
-					<p>Ежедневно с 7-00 до 22-00</p>
+					<p class="footer-top__column__item footer-discribe">Аренда ямобура по выгодным ценам</p>
+					<p class="footer-top__column__item footer-discribe">Огромный опыт в буровых работах</p>
+					<p class="footer-top__column__item footer-tel"><a class="tel" href="tel:+375296949698">+375 29
+							694-96-98</a></p>
+					<p class="footer-top__column__item footer-tel"><a class="tel" href="tel:+375296949698">+375 29
+							694-96-98</a></p>
+					<p class="footer-top__column__item">Ежедневно с 7-00 до 22-00</p>
 				</div>
 				<div class="footer-top__column">
 					<h5>НАША ТЕХНИКА</h5>
-					<img src="/asetss/images/footer/_DSC3958.jpg" alt="" width="300">
-					<a href="#et1404">Wacker Neuson ET 1404</a>
-					<a href="#et24">Wacker Neuson ET 24</a>
+					<img class="footer-img" src="/asetss/images/footer/_DSC3958.jpg" alt="" width="300">
+					<a class="footer-top__column__item" href="#et1404">Wacker Neuson ET 1404</a>
+					<a class="footer-top__column__item" href="#et24">Wacker Neuson ET 24</a>
 				</div>
 				<div class="footer-top__column">
 					<h5>РАЗДЕЛЫ</h5>
-					<a href="#servises">Услуги</a>
-					<a href="#technic">Наша техника</a>
-					<a href="#portfolio">Наши работы</a>
-					<a href="#feedback">Отзывы</a>
-					<a href="#price">Стоимость бурения</a>
-					<a href="#calculate">Калькулятор</a>
-					<a href="#contacts">Контакты</a>
+					<a class="footer-top__column__item" href="#servises">Услуги</a>
+					<a class="footer-top__column__item" href="#technic">Наша техника</a>
+					<a class="footer-top__column__item" href="#portfolio">Наши работы</a>
+					<a class="footer-top__column__item" href="#feedback">Отзывы</a>
+					<a class="footer-top__column__item" href="#price">Стоимость бурения</a>
+					<a class="footer-top__column__item" href="#calculate">Калькулятор</a>
+					<a class="footer-top__column__item" href="#contacts">Контакты</a>
 				</div>
 				<div class="footer-top__column">
 					<h5>НАШИ УСЛУГИ</h5>
-					<a href="">Бурение свай под фундамент</a>
-					<a href="">Бурение отверстий под столбы забора</a>
-					<a href="">Бурение отверстий под столбы освещения</a>
-					<a href="">Бурение ям под посадку растений </a>
+					<a class="footer-top__column__item" href="">Бурение свай под фундамент</a>
+					<a class="footer-top__column__item" href="">Бурение отверстий под столбы забора</a>
+					<a class="footer-top__column__item" href="">Бурение отверстий под столбы освещения</a>
+					<a class="footer-top__column__item" href="">Бурение ям под посадку растений </a>
 				</div>
 			</div>
-			<div class="footer-middle footer__item">
-				<p>Предосталяем аренду ямобуров на мини-экскаваторах в Минске и Минской области (Атолино, Богатырево,
-					Большевик, Большой
-					тростенец, Боровляны, Воложин, Гатово, Городище, Дворище, Дзержинск, Ждановичи, Замосточье, Заславль,
-					Колодищи, Копище,
-					Королев Стан, Лапоровичи, Логойск, Логойск, Лошаны, Марьина Горка, Марьяливо, Мачулищи,<br>
-					Михановичи, Новоселье, Новый двор, Озерцо, Острошицкий городок, Петришки, Привольный, Прилуки,
-					Радошковичи, Ратомка,
-					Раубичи, Самохваловичи, Семково, Слобода, Старое село, Столбцы, Сухорукие, Тарасово, Узда, Фаниполь,
-					Хатежино, Цнянка,
-					Чачково, Червень, Черкассы, Чуденичи, Чуриловичи)</p>
-			</div>
-			<div class=" footer-bottom footer__item">
-				<span>2022</span>
-				<span>СтройМниТехника</span>
-				<span>Все права защищены</span>
-			</div>
+		</div>
+		<div class="footer-middle footer__item">
+			<p class="footer-middle-text">Предосталяем аренду ямобуров на мини-экскаваторах в Минске и Минской области
+				(Атолино, Богатырево,
+				Большевик, Большой
+				тростенец, Боровляны, Воложин, Гатово, Городище, Дворище, Дзержинск, Ждановичи, Замосточье, Заславль,
+				Колодищи, Копище,
+				Королев Стан, Лапоровичи, Логойск, Логойск, Лошаны, Марьина Горка, Марьяливо, Мачулищи,
+				Михановичи, Новоселье, Новый двор, Озерцо, Острошицкий городок, Петришки, Привольный, Прилуки,
+				Радошковичи, Ратомка,
+				Раубичи, Самохваловичи, Семково, Слобода, Старое село, Столбцы, Сухорукие, Тарасово, Узда, Фаниполь,
+				Хатежино, Цнянка,
+				Чачково, Червень, Черкассы, Чуденичи, Чуриловичи)</p>
+		</div>
+		<div class="footer-bottom footer__item">
+			<span class="footer-bottom-text">2022</span>
+			<span class="footer-bottom-text">СтройМиниТехника</span>
+			<span class="footer-bottom-text">Все права защищены</span>
+
 		</div>
 	</footer>
 

@@ -18,6 +18,8 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p,
 ul,
 ol,
@@ -123,6 +125,14 @@ h3 {
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
+}
+
+h6 {
+  font-family: "Hind", Sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #000;
+  margin: 10px 0;
 }
 
 p {
@@ -317,8 +327,7 @@ header {
 }
 
 .separator-smoll-image__elem {
-  display: block;
-  flex-shrink: 1;
+  width: 11.1111111111%;
 }
 
 .servises__content {
@@ -599,6 +608,150 @@ td {
 }
 .price-item:last-child::before {
   top: 20px;
+}
+
+.contacts-wrapper {
+  padding: 0 20px;
+  display: flex;
+  margin: 40px auto;
+  justify-content: space-around;
+}
+
+.column-title {
+  color: #222931;
+  margin-bottom: 15px;
+  position: relative;
+}
+.column-title::before {
+  content: "";
+  width: 20px;
+  height: 4px;
+  background-color: #FE7012;
+  position: absolute;
+  top: -15px;
+}
+
+.contacts-column {
+  display: flex;
+  flex-direction: column;
+}
+.contacts-column:first-child {
+  max-width: 400px;
+}
+.contacts-column:last-child {
+  max-width: 700px;
+}
+
+.contacts__item {
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+
+.surname {
+  padding-bottom: 10px;
+  color: #54595F;
+  font-weight: 600;
+}
+
+.miniarenda {
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+label {
+  font-family: "Hind", Sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #54595F;
+  padding: 20px 0 5px;
+}
+
+input[type=text], input[type=tel], input[type=email], textarea {
+  background-color: #f5f6f6;
+  padding: 12px;
+  border: none;
+  resize: none;
+}
+input[type=text]::placeholder, input[type=tel]::placeholder, input[type=email]::placeholder, textarea::placeholder {
+  color: #979797;
+}
+input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea:focus {
+  outline: none;
+  background-color: #fff;
+  border: 2px solid #979797;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form__button {
+  width: 200px;
+  margin-top: 50px;
+}
+
+.footer-bottom {
+  background-color: #979797;
+  color: #f5f6f6;
+  font-size: 0.8rem;
+  line-height: 2.3rem;
+  text-align: center;
+}
+
+.footer-middle {
+  background-color: #f5f6f6;
+  font-size: 0.6rem;
+  padding: 7px 20px;
+}
+
+.footer-middle-text {
+  text-align: center;
+}
+
+h5 {
+  color: #FE7012;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.footer-top {
+  padding: 20px;
+  display: flex;
+}
+
+.footer-top__column {
+  width: 18%;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Archivo", Sans-serif;
+  font-size: 1.5rem;
+}
+.footer-top__column:first-child {
+  width: 30%;
+}
+.footer-top__column:last-child {
+  width: 34%;
+}
+
+.footer-bottom-text {
+  padding: 0 15px;
+}
+
+.footer-discribe {
+  font-weight: 700;
+}
+
+.footer-top__column__item {
+  line-height: 3rem;
+}
+
+.footer-img {
+  margin-bottom: 15px;
+}
+
+.footer-tel {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 4.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
