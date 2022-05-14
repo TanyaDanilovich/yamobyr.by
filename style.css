@@ -185,7 +185,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: relative;
 }
 
 header {
@@ -196,11 +195,6 @@ header {
   font-style: normal;
   text-decoration: none;
   line-height: 1.6rem;
-  width: 100%;
-}
-
-.site__header {
-  position: absolute;
 }
 
 .header__content {
@@ -282,12 +276,6 @@ header {
 
 .menu-link {
   color: #fff;
-}
-
-.slider {
-  padding-bottom: 700px;
-  background: url("../../asetss/images/main-slider/_DSC2623.jpg");
-  background-size: cover;
 }
 
 .separator {
