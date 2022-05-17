@@ -1,38 +1,44 @@
-.link__button{
+.link__button {}
 
-}
-.button{
+.button {
 	font-family: "Hind", Sans-serif;
-   font-size: 1.4rem;
-   font-weight: 600;
-   text-transform: uppercase;
-   font-style: normal;
-   text-decoration: none;
-   letter-spacing: 0.5px;
+	font-size: 1.4rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-style: normal;
+	text-decoration: none;
+	letter-spacing: 0.5px;
 	color: $white-color;
 	cursor: pointer;
 	border: none;
-	&:hover{
+
+
+	&:hover {
 		transition: all 0.5s;
 	}
-padding: 13px 20px 10px 20px;
-border-radius: 3px;
+
+	padding: 13px 20px 10px 20px;
+	border-radius: 3px;
 }
-.button-dark{
-	background-color: $black-color;
-	&:hover{
+
+.button-dark {
+	background-color: $color-dark;
+
+	&:hover {
 		background-color: $contrast-color;
 	}
 }
 
-.button-colored{
+.button-colored {
 	background-color: $contrast-color;
-	&:hover{
-		background-color: $black-color;
+
+	&:hover {
+		background-color: $color-dark;
 	}
 }
-.button__container{
+
+.button__container {
 	display: flex;
 	justify-content: center;
-	
+
 }

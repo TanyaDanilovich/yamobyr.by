@@ -3,5 +3,34 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	position: relative;
+	//border: 5px solid red;
+}
 
+.no-scroll {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	overflow: hidden;
+}
+
+.arrow-up__container {
+	width: 50px;
+	height: 50px;
+	background: $contrast-color;
+	position: fixed;
+	z-index: 999;
+	border-radius: 50%;
+	bottom: 10%;
+	left: 10%;
+}
+
+.arrow-up {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	border-bottom: 3px solid $white-color;
+	border-left: 3px solid $white-color;
+	transform: rotate(135deg);
+	top: calc(50% - 7px);
+	left: calc(50% - 7px);
 }

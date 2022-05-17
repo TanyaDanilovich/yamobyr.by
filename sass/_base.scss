@@ -2,13 +2,13 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* Убираем внутренние отступы */
 ul,
 ol {
-  padding: 0;
+	padding: 0;
 }
 
 /* Убираем внешние отступы */
@@ -28,36 +28,36 @@ figcaption,
 blockquote,
 dl,
 dd {
-  margin: 0;
+	margin: 0;
 }
 
 /* Выставляем основные настройки по-умолчанию для body */
 body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
 ul,
 ol {
-  list-style: none;
+	list-style: none;
 }
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
-a{
-  text-decoration: none;
+a {
+	text-decoration: none;
 }
 
 /* Упрощаем работу с изображениями */
 img {
-  max-width: 100%;
-  display: block;
+	max-width: 100%;
+	display: block;
 }
 
 /* Указываем понятную периодичность в потоке данных у article*/
-article > * + * {
-  margin-top: 1em;
+article>*+* {
+	margin-top: 1em;
 }
 
 /* Наследуем шрифты для инпутов и кнопок */
@@ -65,27 +65,31 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+	font: inherit;
 }
 
 
-html{
+html {
 	font-size: 10px;
+	line-height: 130%;
+	scroll-behavior: smooth;
 }
 
-body{
+body {
 	scroll-behavior: smooth;
 	font-family: inherit;
 	font-size: 1.6rem;
 	font-style: normal;
-   font-weight: 400;
-   font-family: "Archivo", Verdana, sans-serif;
-   letter-spacing: 0px;
-   text-align: left;
-   color: $color-text;
-   text-transform: none;
+	font-weight: 400;
+	font-family: "Archivo", Verdana, sans-serif;
+	letter-spacing: 0px;
+	text-align: left;
+	color: $color-text;
+	text-transform: none;
+
 }
-.wrapper{
+
+.wrapper {
 	max-width: 1200px;
 	margin: 0 auto;
 	//padding-top: 30px;
@@ -93,52 +97,63 @@ body{
 }
 
 
-h1{
+h1 {
 	color: $contrast-color;
-   font-family: "Hind", Sans-serif;
-   font-size: 3.4rem;
+	font-family: "Hind", Sans-serif;
+	font-size: 3.4rem;
 	line-height: 4rem;
-   font-weight: 600;
-   text-transform: uppercase;
-   font-style: normal;
-   text-decoration: none;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-style: normal;
+	text-decoration: none;
 	margin-bottom: 10px;
 }
-h2{
+
+h2 {
 	color: #292929;
-   font-family: "Hind", Sans-serif;
-   font-size: 3.4rem;
+	font-family: "Hind", Sans-serif;
+	font-size: 3.4rem;
 	line-height: 4rem;
-   font-weight: 600;
-   text-transform: uppercase;
-   font-style: normal;
-   text-decoration: none;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-style: normal;
+	text-decoration: none;
 	margin: 30px auto 0;
 	padding-bottom: 20px;
 	text-align: center;
 }
 
-h3{
+h3 {
 	color: $contrast-color;
-   font-family: "Hind", Sans-serif;
-   font-size: 2.2rem;
-   font-weight: 600;
-   text-transform: uppercase;
+	font-family: "Hind", Sans-serif;
+	font-size: 2.2rem;
+	font-weight: 600;
+	text-transform: uppercase;
 	text-align: center;
 }
-h6{
+
+h6 {
 	font-family: "Hind", Sans-serif;
-   font-size: 1.6rem;
-   font-weight: 600;
+	font-size: 1.6rem;
+	font-weight: 600;
 	color: $black-color;
 	margin: 10px 0;
 }
 
-p{ text-align: left;
-   color: $color-text;
-   font-family: "Open Sans", Sans-serif;
-  // font-size: 15px;
-   font-weight: 400;
-   text-transform: none;
-   font-style: normal;
+p {
+	text-align: left;
+	color: $color-text;
+	font-family: "Open Sans", Sans-serif;
+	// font-size: 15px;
+	font-weight: 400;
+	text-transform: none;
+	font-style: normal;
+}
+
+.wrapper {
+	position: relative;
+}
+
+.hidden {
+	display: none;
 }

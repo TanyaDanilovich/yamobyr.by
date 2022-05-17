@@ -6,36 +6,54 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
 	<link
-		href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700&family=Hind:wght@600&family=Open+Sans:wght@400;600&family=Roboto+Slab&family=Roboto:wght@400;500&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700&family=Hind:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Аренда бура</title>
 </head>
 
-<body>
+<body class="body">
 	<header class="site__header" id="header">
 		<div class="wrapper">
 			<div class="header__content">
 				<section class="header-top">
-					<div class="header-row">
+					<div class="header-row__container">
 						<div class="row-3-column">
-							<div class="logo "><a href="#"><img src="./asetss/icons/logo.png" alt="logo" height="50"></a></div>
-							<div class="header-row__element">
-								<div class="inner-column inner-column-tel">
-									<span class=" inner-element"><a class="tel" href="tel:+375296949698">+375 29
-											694-96-98</a></span>
-									<span class="inner-element"><a class="tel" href="tel:+375336949698">+375 33
-											694-96-98</a></span>
+							<div class="logo" id="logo"><a href="#" class="logo-link">
+									<div class="logo-text__container">
+										<span class="logo-text">АРЕНДА ЯМОБУРА</span>
+										<span class="logo-text">В Минске и Минской области</span>
+									</div>
+								</a></div>
+							<div class="header-row-align">
+								<div class="header-row__element">
+									<div class="inner-column inner-column-tel">
+										<span class="inner-element velcom"><a class="tel" href="tel:+375296949698">+375 29
+												694-96-98</a></span>
+										<span class="inner-element mtc"><a class="tel" href="tel:+375336949698">+375 33
+												694-96-98</a></span>
+									</div>
+									<div class="inner-column schedule">
+										<span class="inner-element">Время работы</span>
+										<span class="inner-element">Ежедневно с 7-00 до 22-00</span>
+									</div>
 								</div>
-								<div class="inner-column schedule">
-									<span class="inner-element">Время работы</span>
-									<span class="inner-element">Ежедневно с 7-00 до 22-00</span>
+								<div class="header-row__button">
+									<a class="link__button" href="#"><button class="header__button button button-dark"
+											id="header-row__button">Заказать&nbsp;&nbsp;звонок</button></a>
 								</div>
 							</div>
-							<div class="header-row__button">
-								<a class="link__button" href="#"><button class="button button-dark">Заказать звонок</button></a>
+						</div>
+						<div class="hamburger__menu__container">
+							<div class="hamburger">
+								<div class="hamburger-line"></div>
+								<div class="hamburger-line"></div>
+								<div class="hamburger-line"></div>
 							</div>
 
 						</div>
@@ -48,7 +66,7 @@
 											<li class="menu__element"><a class="menu-link" href="#technic">Техника</a></li>
 											<li class="menu__element"> <a class="menu-link" href="#servises">Услуги ямобура</a>
 											</li>
-											<li class="menu__element"> <a class="menu-link" href="#price">Стоимость бурения</a>
+											<li class="menu__element"> <a class="menu-link" href="#price">Стоимость</a>
 											</li>
 											<li class="menu__element"> <a class="menu-link" href="#feedback">Отзывы</a></li>
 											<li class="menu__element"> <a class="menu-link" href="#portfolio">Наши работы</a></li>
@@ -65,9 +83,32 @@
 	</header>
 	<main>
 		<section class="slider">
-			<div class="wrapper">
-				<div class="slider__content">
-					<!-- Слайдер тут будет когда-нибудь -->
+			<div class="slider__wrapper">
+				<div class="slider__container swiper">
+					<div class="slider-inner-wrapper swiper-wrapper">
+						<div class="slider-slide swiper-slide">
+							<div class="slider-img__container swiper-img__container">
+								<img class="slider-img swiper-img" src="./asetss/images/main-slider/_DSC2623.jpg" alt="">
+							</div>
+						</div>
+						<div class="slider-slide swiper-slide">
+							<div class="slider-img__container swiper-img__container">
+								<img class="slider-img swiper-img" src="./asetss/images/main-slider/_DSC4349.jpg" alt="">
+							</div>
+						</div>
+						<div class="slider-slide swiper-slide">
+							<div class="slider-img__container swiper-img__container">
+								<img class="slider-img swiper-img" src="./asetss/images/main-slider/_DSC4666.jpg" alt="">
+							</div>
+						</div>
+						<div class="slider-slide swiper-slide">
+							<div class="slider-img__container swiper-img__container">
+								<img class="slider-img swiper-img" src="./asetss/images/main-slider/_DSC4764.jpg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="slider__button swiper-button-prev"></div>
+					<div class="slider__button swiper-button-next"></div>
 				</div>
 			</div>
 		</section>
@@ -147,7 +188,7 @@
 							</div>
 						</div>
 						<div class="skills__item__inner">
-							<span class=" skills-svg schedule"></span>
+							<span class=" skills-svg schedule-skills"></span>
 							<div class="skills__inner__content">
 								<h3 class="skills__inner__title">РАБОТАЕМ БЕЗ ВЫХОДНЫХ И ПРАЗДНИКОВ</h3>
 								<p class="skills__inner__content__item">Обеспечиваем бесперебойную работу техники на объекте</p>
@@ -473,11 +514,17 @@
 			<span class="footer-bottom-text">2022</span>
 			<span class="footer-bottom-text">СтройМиниТехника</span>
 			<span class="footer-bottom-text">Все права защищены</span>
-
 		</div>
+
 	</footer>
+	<a class="arrow-up-link " href="#logo">
+		<span class="arrow-up__container hidden">
+			<span class="arrow-up"></span>
+		</span>
+	</a>
 
-
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<script src="./js/script.js"></script>
 </body>
 
 </html>
