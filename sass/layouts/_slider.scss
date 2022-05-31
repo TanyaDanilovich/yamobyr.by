@@ -2,6 +2,7 @@
 	z-index: 10;
 	width: 100%;
 	height: 100%;
+	margin-top: 150px;
 }
 
 .slider__container {}
@@ -67,7 +68,9 @@
 	max-height: 100vh;
 }
 
-.slider-img {}
+.slider-img {
+	margin: 0 auto;
+}
 
 .swiper-img {}
 

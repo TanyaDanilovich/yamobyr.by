@@ -100,19 +100,19 @@ body {
 h1 {
 	color: $contrast-color;
 	font-family: "Hind", Sans-serif;
-	font-size: 3.4rem;
+	font-size: 2.5rem;
 	line-height: 4rem;
 	font-weight: 600;
 	text-transform: uppercase;
 	font-style: normal;
 	text-decoration: none;
-	margin-bottom: 10px;
+
 }
 
 h2 {
 	color: #292929;
 	font-family: "Hind", Sans-serif;
-	font-size: 3.4rem;
+	font-size: 2.5rem;
 	line-height: 4rem;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -152,6 +152,8 @@ p {
 
 .wrapper {
 	position: relative;
+	width: 100%;
+	;
 }
 
 .hidden {

@@ -47,16 +47,17 @@
 	position: relative;
 	width: 36px;
 	height: 26px;
-	//border: 1px solid red;
-	left: calc(50% - 18px);
 	top: calc(50% - 13px);
+	margin-left: 18px;
 }
 
 .hamburger__menu__container {
 	position: relative;
 	height: 50px;
-	width: 50px;
+	//width: 50px;
+	width: 90%;
 	background: $contrast-color;
-	border-radius: 30%;
-	margin-left: 8%;
+	margin: 20px auto;
+	//border-radius: 30%;
+	//margin-left: 8%;
 }
