@@ -82,11 +82,11 @@ body {
 	font-style: normal;
 	font-weight: 400;
 	font-family: "Archivo", Verdana, sans-serif;
-	letter-spacing: 0px;
+	letter-spacing: 1px;
 	text-align: left;
 	color: $color-text;
 	text-transform: none;
-
+	line-height: 130%;
 }
 
 .wrapper {
@@ -130,6 +130,7 @@ h3 {
 	font-weight: 600;
 	text-transform: uppercase;
 	text-align: center;
+	line-height: 150%;
 }
 
 h6 {

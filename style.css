@@ -82,10 +82,11 @@ body {
   font-style: normal;
   font-weight: 400;
   font-family: "Archivo", Verdana, sans-serif;
-  letter-spacing: 0px;
+  letter-spacing: 1px;
   text-align: left;
   color: #7A7A7A;
   text-transform: none;
+  line-height: 130%;
 }
 
 .wrapper {
@@ -126,6 +127,7 @@ h3 {
   font-weight: 600;
   text-transform: uppercase;
   text-align: center;
+  line-height: 150%;
 }
 
 h6 {
@@ -543,6 +545,8 @@ header {
   font-family: "Hind", Sans-serif;
   font-size: 1.4rem;
   font-weight: 600;
+  margin: 20px;
+  line-height: 150%;
 }
 
 .purpose__title {
@@ -654,8 +658,7 @@ header {
 }
 
 .skills__title {
-  width: 50%;
-  line-height: 5rem;
+  line-height: 4rem;
   margin: 0 auto;
   text-align: center;
   color: #fff;
@@ -663,13 +666,14 @@ header {
 
 .skills__content {
   max-width: 1200px;
+  padding: 15px;
 }
 
 .skills__item-text {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: #fff;
   text-align: center;
-  padding-bottom: 50px;
+  padding: 30px;
 }
 
 h3 {
@@ -691,16 +695,28 @@ h3 {
 .skills__item__inner {
   display: flex;
   position: relative;
-  width: calc(50% - 10px);
+  flex-direction: column;
+  padding: 15px;
 }
 
-.skills-svg {
+.skills-svg__container {
   width: 60px;
   height: 60px;
   display: block;
   background-color: #FE7012;
   border-radius: 50%;
   align-self: center;
+}
+
+.skills-svg {
+  position: relative;
+  top: 15px;
+  left: 15px;
+}
+
+.caslendar {
+  top: 17px;
+  left: 17px;
 }
 
 .skills__inner__title {
@@ -711,63 +727,13 @@ h3 {
 .skills__inner__content__item {
   color: #fff;
   font-size: 1.4rem;
+  text-align: center;
 }
 
 .skills__inner__content {
-  padding: 20px 0 20px 20px;
+  padding: 20px;
   width: calc(100% - 60px);
-}
-
-.reward::before {
-  content: " ";
-  width: 30px;
-  height: 30px;
-  background-image: url("../asetss/icons/reward.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  position: absolute;
-  top: calc(50% - 15px);
-  left: 15px;
-}
-
-.schedule-skills::before {
-  content: " ";
-  width: 30px;
-  height: 30px;
-  background-image: url("../asetss/icons/schedule.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  position: absolute;
-  top: calc(50% - 15px);
-  left: 15px;
-}
-
-.briefcase::before {
-  content: " ";
-  width: 30px;
-  height: 30px;
-  background-image: url("../asetss/icons/briefcase.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  position: absolute;
-  top: calc(50% - 15px);
-  left: 15px;
-}
-
-.handshake::before {
-  content: " ";
-  width: 30px;
-  height: 30px;
-  background-image: url("../asetss/icons/Handshake.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  position: absolute;
-  top: calc(50% - 15px);
-  left: 15px;
+  margin: 0 auto;
 }
 
 .technic__title {

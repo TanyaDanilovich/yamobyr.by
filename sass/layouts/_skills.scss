@@ -20,22 +20,24 @@
 }
 
 .skills__title {
-	width: 50%;
-	line-height: 5rem;
+	//width: 50%;
+	line-height: 4rem;
 	margin: 0 auto;
 	text-align: center;
 	color: $white-color;
+
 }
 
 .skills__content {
 	max-width: 1200px;
+	padding: 15px;
 }
 
 .skills__item-text {
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 	color: $white-color;
 	text-align: center;
-	padding-bottom: 50px;
+	padding: 30px;
 }
 
 h3 {
@@ -61,10 +63,12 @@ h3 {
 	//border:  1px solid red;
 	display: flex;
 	position: relative;
-	width: calc(50% - 10px);
+	flex-direction: column;
+	padding: 15px;
+	//width: calc(50% - 10px);
 }
 
-.skills-svg {
+.skills-svg__container {
 	width: 60px;
 	height: 60px;
 	//width: 100%;
@@ -72,6 +76,18 @@ h3 {
 	background-color: $contrast-color;
 	border-radius: 50%;
 	align-self: center;
+	//position: relative;
+}
+
+.skills-svg {
+	position: relative;
+	top: 15px;
+	left: 15px;
+}
+
+.caslendar {
+	top: 17px;
+	left: 17px;
 }
 
 .skills__inner__title {
@@ -82,61 +98,11 @@ h3 {
 .skills__inner__content__item {
 	color: $white-color;
 	font-size: 1.4rem;
+	text-align: center;
 }
 
 .skills__inner__content {
-	padding: 20px 0 20px 20px;
+	padding: 20px;
 	width: calc(100% - 60px);
-}
-
-.reward::before {
-	content: " ";
-	width: 30px;
-	height: 30px;
-	background-image: url("../asetss/icons/reward.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-	position: absolute;
-	top: calc(50% - 15px);
-	left: 15px;
-}
-
-.schedule-skills::before {
-	content: " ";
-	width: 30px;
-	height: 30px;
-	background-image: url("../asetss/icons/schedule.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-	position: absolute;
-	top: calc(50% - 15px);
-	left: 15px;
-}
-
-.briefcase::before {
-	content: " ";
-	width: 30px;
-	height: 30px;
-	background-image: url("../asetss/icons/briefcase.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-	position: absolute;
-	top: calc(50% - 15px);
-	left: 15px;
-}
-
-.handshake::before {
-	content: " ";
-	width: 30px;
-	height: 30px;
-	background-image: url("../asetss/icons/Handshake.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-	position: absolute;
-	top: calc(50% - 15px);
-	left: 15px;
+	margin: 0 auto;
 }
