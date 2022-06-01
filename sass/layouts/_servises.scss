@@ -2,7 +2,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 10px;
+	padding: 15px;
 }
 
 .servises__item {
@@ -22,11 +22,12 @@
 
 .layout-3-column__content {
 	margin: 0 auto;
-	width: calc(30% - 10px);
+	//width: calc(30% - 10px);
 }
 
 .servises-images {
 	margin: 0 auto;
+	border: 2px solid $contrast-color;
 }
 
 .layout-3-item {
@@ -34,10 +35,14 @@
 }
 
 .servises__item__content {
-	padding: 15px 15px;
-	color: $color-dark;
-	font-weight: 600;
+	padding: 25px 15px 35px;
+	color: $color-secondary;
+	font-weight: 900;
+	font-size: 2rem;
+	text-transform: uppercase;
+	line-height: 2.5rem;
 }
+
 
 .servises__button {
 	margin: 10px 20px 40px 20px;

@@ -7,11 +7,11 @@
 	text-transform: uppercase;
 	font-style: normal;
 	text-decoration: none;
-	letter-spacing: 0.5px;
+	letter-spacing: 1.5px;
 	color: $white-color;
 	cursor: pointer;
 	border: none;
-
+	line-height: 150%;
 
 	&:hover {
 		transition: all 0.5s;

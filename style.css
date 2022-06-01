@@ -106,7 +106,7 @@ h1 {
 }
 
 h2 {
-  color: #292929;
+  color: #54595F;
   font-family: "Hind", Sans-serif;
   font-size: 2.5rem;
   line-height: 4rem;
@@ -161,10 +161,11 @@ p {
   text-transform: uppercase;
   font-style: normal;
   text-decoration: none;
-  letter-spacing: 0.5px;
+  letter-spacing: 1.5px;
   color: #fff;
   cursor: pointer;
   border: none;
+  line-height: 150%;
   padding: 13px 20px 10px 20px;
   border-radius: 3px;
 }
@@ -591,7 +592,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  padding: 15px;
 }
 
 .servises__item {
@@ -610,11 +611,11 @@ header {
 
 .layout-3-column__content {
   margin: 0 auto;
-  width: calc(30% - 10px);
 }
 
 .servises-images {
   margin: 0 auto;
+  border: 2px solid #FE7012;
 }
 
 .layout-3-item {
@@ -622,9 +623,12 @@ header {
 }
 
 .servises__item__content {
-  padding: 15px 15px;
-  color: #303a45;
-  font-weight: 600;
+  padding: 25px 15px 35px;
+  color: #54595F;
+  font-weight: 900;
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 2.5rem;
 }
 
 .servises__button {
