@@ -220,6 +220,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeSpeed;
+  width: 100vw;
 }
 
 .no-scroll {
@@ -498,13 +499,13 @@ header {
 
 .slider {
   z-index: 10;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   margin-top: 150px;
 }
 
 .slider-wrapper {
-  width: 100%;
+  width: 100vw;
   height: 100%;
 }
 
