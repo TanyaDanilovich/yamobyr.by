@@ -1,6 +1,6 @@
 .separator {
 	background-color: $color-additional;
-	padding: 30px 20px;
+	padding: 10px 0;
 	text-align: center;
 
 }
@@ -29,9 +29,9 @@
 .separator-smoll {
 	color: $contrast-color;
 	font-family: "Hind", Sans-serif;
-	font-size: 1.6rem;
+	font-size: 1.2rem;
 	font-weight: 600;
-	padding: 30px;
+
 	text-align: center;
 }
 
@@ -43,6 +43,10 @@
 
 .separator-big-image__elem {
 	width: calc(20% - 10px);
+}
+
+.separator-big-image {
+	margin-top: 30px;
 }
 
 .separator-smoll-image {

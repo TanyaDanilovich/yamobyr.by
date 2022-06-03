@@ -1,4 +1,4 @@
-new Swiper('.slider__container', {
+const mainSwiper = new Swiper('.slider__container', {
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev'
@@ -9,6 +9,13 @@ new Swiper('.slider__container', {
 		disableOnInteraction: false
 	}
 });
+
+const portfolioSwiper = new Swiper('.portfolio-swiper', {
+	loop: true,
+	pagination: {
+		el: '.swiper-pagination',
+	}
+})
 //console.log();
 
 //плавный выезд мобильного меню и закрытие
@@ -29,7 +36,7 @@ document.querySelector('.navigation__content').addEventListener('click', () => {
 //стрелка вверх
 const arrowUp = document.querySelector('.arrow-up__container')
 
-
+/* 
 window.onscroll = () => {
 
 	if (window.pageYOffset > 1000) {
@@ -37,4 +44,4 @@ window.onscroll = () => {
 	} else {
 		arrowUp.classList.add("hidden")
 	}
-}
+} */
