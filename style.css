@@ -59,6 +59,11 @@ ol {
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a {
   text-decoration: none;
+  color: #7A7A7A;
+}
+
+a:visited {
+  color: #7A7A7A;
 }
 
 /* Упрощаем работу с изображениями */
@@ -212,6 +217,9 @@ body {
   justify-content: space-between;
   position: relative;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeSpeed;
 }
 
 .no-scroll {
@@ -225,11 +233,11 @@ body {
   width: 50px;
   height: 50px;
   background: #FE7012;
-  position: fixed;
-  z-index: 999;
+  position: fixed !important;
+  z-index: 999 !important;
   border-radius: 50%;
-  bottom: 10%;
-  left: 10%;
+  bottom: 20px;
+  left: 20px;
 }
 
 .arrow-up {
@@ -239,7 +247,7 @@ body {
   border-bottom: 3px solid #fff;
   border-left: 3px solid #fff;
   transform: rotate(135deg);
-  top: calc(50% - 7px);
+  bottom: calc(50% - 7px);
   left: calc(50% - 7px);
 }
 
@@ -381,6 +389,10 @@ header {
   flex-grow: 1;
   justify-content: center;
   width: 100%;
+}
+
+.menu-link {
+  color: #fff !important;
 }
 
 .navigation__content {
@@ -1091,6 +1103,7 @@ td {
   color: #303a45;
   margin: 15px;
   position: relative;
+  text-align: left;
 }
 .column-title::before {
   content: "";
@@ -1183,6 +1196,7 @@ textarea:focus {
 
 .footer-middle-text {
   text-align: center;
+  line-height: 110%;
 }
 
 h5 {
@@ -1192,23 +1206,26 @@ h5 {
 }
 
 .footer-top {
-  padding: 20px;
   display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
 }
 
 .footer-top__column {
-  width: 18%;
-  padding-left: 30px;
+  margin-top: 40px;
+  width: calc(50% - 10px);
   display: flex;
   flex-direction: column;
   font-family: "Archivo", Sans-serif;
   font-size: 1.5rem;
-}
-.footer-top__column:first-child {
-  width: 30%;
-}
-.footer-top__column:last-child {
-  width: 34%;
+  /* 
+  :first-child {
+  	width: 30%;
+  }
+
+  :last-child {
+  	width: 34%;
+  } */
 }
 
 .footer-bottom-text {
@@ -1220,7 +1237,8 @@ h5 {
 }
 
 .footer-top__column__item {
-  line-height: 3rem;
+  line-height: 150%;
+  margin-bottom: 10px;
 }
 
 .footer-img {
@@ -1228,9 +1246,14 @@ h5 {
 }
 
 .footer-tel {
-  font-size: 3rem;
+  font-size: 1.6rem;
   font-weight: 900;
-  line-height: 4.5rem;
+  margin: 15px 0;
+}
+
+.work-time {
+  width: 45%;
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

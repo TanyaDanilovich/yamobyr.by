@@ -47,6 +47,11 @@ ol {
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a {
 	text-decoration: none;
+	color: $color-text;
+}
+
+a:visited {
+	color: $color-text;
 }
 
 /* Упрощаем работу с изображениями */

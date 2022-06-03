@@ -36,7 +36,7 @@ document.querySelector('.navigation__content').addEventListener('click', () => {
 //стрелка вверх
 const arrowUp = document.querySelector('.arrow-up__container')
 
-/* 
+
 window.onscroll = () => {
 
 	if (window.pageYOffset > 1000) {
@@ -44,4 +44,4 @@ window.onscroll = () => {
 	} else {
 		arrowUp.classList.add("hidden")
 	}
-} */
+}
