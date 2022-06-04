@@ -220,7 +220,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   text-rendering: optimizeSpeed;
-  width: 100vw;
 }
 
 .no-scroll {
@@ -966,7 +965,7 @@ h4 {
 }
 .user-letter::after {
   position: absolute;
-  content: url("../asetss/icons/checkmark-circle-green.svg");
+  content: url("./asetss/icons/checkmark-circle-green.svg");
   bottom: 0px;
   right: 0;
   background: #fff;
@@ -1240,6 +1239,21 @@ h5 {
 .footer-top__column__item {
   line-height: 150%;
   margin-bottom: 10px;
+}
+
+.before {
+  position: relative;
+  padding-left: 20px;
+}
+.before::before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #FE7012;
+  top: 8px;
+  left: 0;
 }
 
 .footer-img {

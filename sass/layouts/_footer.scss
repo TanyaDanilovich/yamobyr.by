@@ -61,6 +61,22 @@ h5 {
 	margin-bottom: 10px;
 }
 
+.before {
+	position: relative;
+	padding-left: 20px;
+
+	&::before {
+		position: absolute;
+		content: '';
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		background: $contrast-color;
+		top: 8px;
+		left: 0;
+	}
+}
+
 .footer-img {
 	margin-bottom: 15px;
 }
