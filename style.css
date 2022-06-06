@@ -110,6 +110,7 @@ body {
   margin: 0 auto;
   padding: 15px;
   position: relative;
+  overflow: hidden;
 }
 
 h1 {
@@ -561,6 +562,8 @@ header {
   background-color: #f5f6f6;
   padding: 10px 0;
   text-align: center;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .title__content {

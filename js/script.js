@@ -73,7 +73,7 @@ const createReview = ({ userName, longReview }) => {
 
 	const userReviewContainer_second = createElement('div', 'user-review__container');
 	const shortReview = createElement('p', 'short-review');
-	shortReview.innerText = `${longReview.substring(0, 116)} ...`
+	shortReview.innerText = `${longReview.substring(0, 117)} ...`
 	//console.log(shortReview.innerText)
 	const readThen = createElement('span', 'read-then');
 	readThen.innerText = "Читать далее";
