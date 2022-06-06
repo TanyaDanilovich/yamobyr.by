@@ -54,10 +54,13 @@
 .hamburger__menu__container {
 	position: relative;
 	height: 50px;
-	//width: 50px;
 	width: 100%;
 	background: $contrast-color;
 	margin: 20px auto;
+
 	//border-radius: 30%;
 	//margin-left: 8%;
+	@include media-tablet {
+		display: none;
+	}
 }

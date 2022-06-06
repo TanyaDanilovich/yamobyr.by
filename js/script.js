@@ -59,8 +59,21 @@ function createElement(element, className) {
 	return el;
 }
 
-const createReview = ({ userName, longReview }) => {
+const symbolCount = (width) => {
+	let count = 117;
+	if (width > 416) {
+		count = 150;
+	}
+	if (width > 523) {
+		count = 200
+	}
+	if (width > 523) {
+		count = 250
+	}
+	return count;
+}
 
+const createReview = ({ userName, longReview }) => {
 
 	const mainReviewContainer = createElement('div', 'review__main__container');
 	const userReviewContainer_first = createElement('div', 'user-review__container');
@@ -76,9 +89,11 @@ const createReview = ({ userName, longReview }) => {
 	userReviewContainer_first.append(userReviewItem);
 	mainReviewContainer.append(userReviewContainer_first);
 
+	const count = symbolCount(window.screen.width);
+
 	const userReviewContainer_second = createElement('div', 'user-review__container');
 	const shortReview = createElement('p', 'short-review');
-	shortReview.innerText = `${longReview.substring(0, 117)} ...`
+	shortReview.innerText = `${longReview.substring(0, count)} ...`
 	//console.log(shortReview.innerText)
 	const readThen = createElement('span', 'read-then');
 	readThen.innerText = "Читать далее";

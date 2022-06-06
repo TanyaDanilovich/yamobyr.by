@@ -1,8 +1,12 @@
 .navigation__content {
-	//margin-top: 15px;
 	background-color: $contrast-color;
 	padding: 20% 15%;
 	position: relative;
+
+	@include media-tablet {
+		margin-top: 15px;
+		padding: 0;
+	}
 
 	&::before,
 	&::after {
@@ -13,6 +17,10 @@
 		height: 2px;
 		width: 30px;
 		background: $color-dark;
+
+		@include media-tablet {
+			display: none;
+		}
 	}
 
 	&::before {
@@ -23,11 +31,17 @@
 		transform: rotate(-45deg);
 	}
 
+
 }
 
 .menu {
 	display: flex;
-	//flex-direction: row;
+
+	@include media-tablet {
+		flex-direction: row;
+		margin: 0 15px;
+	}
+
 	flex-direction: column;
 	margin-left: 15px;
 	justify-content: space-between;
@@ -45,8 +59,13 @@
 	font-weight: normal;
 	line-height: 130%;
 	letter-spacing: 2px;
-
 	cursor: pointer;
+
+	@include media-tablet {
+		padding: 10px 3px;
+		display: inline-block;
+		letter-spacing: 1px;
+	}
 
 	&:hover {
 		background-color: $color-dark;
@@ -56,4 +75,8 @@
 
 .menu-link {
 	color: $white-color;
+
+	@include media-tablet {
+		font-size: 1.3rem;
+	}
 }

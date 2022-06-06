@@ -22,7 +22,16 @@
 
 .layout-3-column__content {
 	margin: 0 auto;
-	//width: calc(30% - 10px);
+
+	@include media-tablet {
+		width: calc(50% - 30px);
+	}
+
+	@include media-random(1000px) {
+		width: calc(30% - 10px);
+	}
+
+
 }
 
 .servises-images {
@@ -38,7 +47,7 @@
 	padding: 25px 15px 35px;
 	color: $color-secondary;
 	font-weight: 900;
-	font-size: 2rem;
+	font-size: 1.6rem;
 	text-transform: uppercase;
 	line-height: 2.5rem;
 }

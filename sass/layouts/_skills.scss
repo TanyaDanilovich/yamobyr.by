@@ -65,7 +65,12 @@ h3 {
 	position: relative;
 	flex-direction: column;
 	padding: 15px;
-	//width: calc(50% - 10px);
+
+	width: 100%;
+
+	@include media-tablet {
+		width: calc(50% - 10px);
+	}
 }
 
 .skills-svg__container {

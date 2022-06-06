@@ -3,6 +3,10 @@
 	width: 100vw;
 	height: 100%;
 	margin-top: 170px;
+
+	@include media-tablet {
+		margin-top: 0;
+	}
 }
 
 .slider__container {}

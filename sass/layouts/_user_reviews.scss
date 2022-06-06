@@ -115,6 +115,10 @@
 	font-weight: 400;
 	font-size: 1.4rem;
 	color: $color-text;
+
+	@include media-random(1000px) {
+		font-size: 1.6rem !important;
+	}
 }
 
 .user-review-item {
