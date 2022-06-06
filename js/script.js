@@ -1,3 +1,7 @@
+import reviews from "./rewievs.js";
+
+
+
 const mainSwiper = new Swiper('.slider__container', {
 	navigation: {
 		nextEl: '.swiper-button-next',
@@ -36,12 +40,84 @@ document.querySelector('.navigation__content').addEventListener('click', () => {
 //стрелка вверх
 const arrowUp = document.querySelector('.arrow-up__container')
 
-
 window.onscroll = () => {
-
 	if (window.pageYOffset > 1000) {
 		arrowUp.classList.remove("hidden");
 	} else {
 		arrowUp.classList.add("hidden")
 	}
 }
+
+function createElement(element, className) {
+	const el = document.createElement(element);
+	el.classList.add(className);
+	return el;
+}
+
+const createReview = ({ userName, longReview }) => {
+
+
+	const mainReviewContainer = createElement('div', 'review__main__container');
+	const userReviewContainer_first = createElement('div', 'user-review__container');
+	const userReviewItem = createElement('div', 'user-review-item');
+	const userLetter = createElement('span', 'user-letter');
+	userLetter.innerText = userName[0];
+	const userBlock = createElement('span', 'user-block');
+	const userNameEl = createElement('div', 'user-name');
+	userNameEl.innerText = userName;
+	userBlock.append(userNameEl);
+	userReviewItem.append(userLetter);
+	userReviewItem.append(userBlock);
+	userReviewContainer_first.append(userReviewItem);
+	mainReviewContainer.append(userReviewContainer_first);
+
+	const userReviewContainer_second = createElement('div', 'user-review__container');
+	const shortReview = createElement('p', 'short-review');
+	shortReview.innerText = `${longReview.substring(0, 116)} ...`
+	//console.log(shortReview.innerText)
+	const readThen = createElement('span', 'read-then');
+	readThen.innerText = "Читать далее";
+	const longReviewEl = createElement('p', 'long-review');
+	longReviewEl.classList.add('hidden')
+	longReviewEl.innerText = longReview;
+	const minimise = createElement('span', 'minimise');
+	minimise.innerText = "Свернуть";
+	minimise.classList.add('hidden');
+	userReviewContainer_second.append(shortReview);
+	userReviewContainer_second.append(readThen);
+	userReviewContainer_second.append(longReviewEl);
+	userReviewContainer_second.append(minimise);
+	mainReviewContainer.append(userReviewContainer_second)
+
+	return mainReviewContainer;
+}
+
+const allReviewsContainer = document.querySelector('.all-reviews__container')
+
+reviews.forEach((el) => {
+	allReviewsContainer.append(createReview(el))
+})
+
+
+//показ полного отзыва и сокращенного отзыва
+function showLongReview(el) {
+	el.nextElementSibling.classList.toggle('hidden')
+	el.previousElementSibling.classList.toggle('hidden')
+	el.classList.toggle('hidden')
+	el.nextElementSibling.nextElementSibling.classList.toggle('hidden')
+}
+
+function showShortReview(el) {
+	el.previousElementSibling.classList.toggle('hidden')
+	el.classList.toggle('hidden')
+	el.previousElementSibling.previousElementSibling.classList.toggle('hidden')
+	el.previousElementSibling.previousElementSibling.previousElementSibling.classList.toggle('hidden')
+}
+
+const readThen = document.querySelectorAll('.read-then')
+readThen.forEach((el) => { el.addEventListener('click', (event) => { showLongReview(event.target) }) })
+
+const minimise = document.querySelectorAll('.minimise')
+minimise.forEach((el) => { el.addEventListener('click', (event) => { showShortReview(event.target) }) })
+//показ полного отзыва и сокращенного отзыва
+

@@ -100,18 +100,21 @@
 	background-color: $white-color;
 }
 
-.user-review__container {
-	display: flex;
-	justify-content: space-between;
+.user-review__container {}
+
+.read-then,
+.minimise {
+	text-decoration: underline;
+	cursor: pointer;
+	margin-top: 15px;
+	display: inline-block;
 }
 
-
-
-.long-review {
+.long-review,
+.short-review {
 	font-weight: 400;
 	font-size: 1.4rem;
 	color: $color-text;
-	text-align: justify;
 }
 
 .user-review-item {
