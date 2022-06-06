@@ -110,7 +110,6 @@ body {
   margin: 0 auto;
   padding: 15px;
   position: relative;
-  overflow: hidden;
 }
 
 h1 {
@@ -250,6 +249,10 @@ body {
   transform: rotate(135deg);
   bottom: calc(50% - 7px);
   left: calc(50% - 7px);
+}
+
+.overflow {
+  overflow: hidden;
 }
 
 header {
@@ -562,8 +565,6 @@ header {
   background-color: #f5f6f6;
   padding: 10px 0;
   text-align: center;
-  width: 100vw;
-  overflow-x: hidden;
 }
 
 .title__content {
@@ -1059,6 +1060,7 @@ h4 {
 
 .price-table {
   margin: 0 auto 30px;
+  width: 100%;
 }
 
 th {

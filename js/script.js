@@ -24,17 +24,22 @@ const portfolioSwiper = new Swiper('.portfolio-swiper', {
 
 //плавный выезд мобильного меню и закрытие
 const headerRow = document.querySelector('.header-row');
+const header = document.getElementById('header')
+
+
 //const hamburger = document.querySelector('.hamburger')
 document.querySelector(".hamburger__menu__container").addEventListener('click', () => {
 	document.querySelectorAll('.hamburger-line').forEach((el) => { el.classList.add('hamburger-line-cross') });
 	document.querySelector('.body').classList.add('no-scroll')
 	headerRow.classList.add('header-row-active')
+	header.classList.remove('overflow')
 })
 
 document.querySelector('.navigation__content').addEventListener('click', () => {
 	document.querySelectorAll('.hamburger-line').forEach((el) => { el.classList.remove('hamburger-line-cross') });
 	document.querySelector('.body').classList.remove('no-scroll')
 	headerRow.classList.remove('header-row-active')
+	header.classList.add('overflow')
 })
 
 //стрелка вверх
