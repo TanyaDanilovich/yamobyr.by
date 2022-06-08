@@ -1,7 +1,7 @@
 //MIXIN
 
-@mixin media-laptop {
-	@media screen and (min-width: $laptop-width) {
+@mixin media-1000 {
+	@media screen and (min-width: 1000px) {
 		@content;
 	}
 }

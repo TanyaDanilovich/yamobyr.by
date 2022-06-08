@@ -498,6 +498,11 @@ header {
     letter-spacing: 1px;
   }
 }
+@media screen and (min-width: 1000px) {
+  .menu__element {
+    padding: 10px 13px;
+  }
+}
 .menu__element:hover {
   background-color: #303a45;
   transition: all 1s;
@@ -509,6 +514,13 @@ header {
 @media screen and (min-width: 769px) {
   .menu-link {
     font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .menu-link {
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 2px;
   }
 }
 
@@ -710,7 +722,7 @@ header {
   font-size: 1.5rem;
   line-height: 2.4rem;
   color: #54595F;
-  text-align: justify;
+  text-align: center;
   padding: 10px 0;
 }
 
@@ -756,7 +768,7 @@ header {
 }
 
 .skills {
-  background: url("./asetss/images/skills/_DSC3951.jpg");
+  background: url("./asetss/images/skills/_DSC3951-2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -790,6 +802,14 @@ header {
   color: #fff;
   text-align: center;
   padding: 30px;
+}
+@media screen and (min-width: 769px) {
+  .skills__item-text {
+    text-align: center;
+    max-width: 711px;
+    margin: 0 auto;
+    line-height: 200%;
+  }
 }
 
 h3 {
@@ -829,16 +849,34 @@ h3 {
   border-radius: 50%;
   align-self: center;
 }
+@media screen and (min-width: 1000px) {
+  .skills-svg__container {
+    width: 90px;
+    height: 90px;
+  }
+}
 
 .skills-svg {
   position: relative;
   top: 15px;
   left: 15px;
 }
+@media screen and (min-width: 1000px) {
+  .skills-svg {
+    top: 30px;
+    left: 30px;
+  }
+}
 
 .caslendar {
   top: 17px;
   left: 17px;
+}
+@media screen and (min-width: 1000px) {
+  .caslendar {
+    top: 32px;
+    left: 32px;
+  }
 }
 
 .skills__inner__title {
@@ -904,6 +942,11 @@ h3 {
     padding-left: 20%;
   }
 }
+@media screen and (min-width: 1200px) {
+  .specifications-text {
+    padding-left: 25%;
+  }
+}
 .specifications-text::before {
   position: absolute;
   content: "";
@@ -916,6 +959,11 @@ h3 {
 @media screen and (min-width: 500px) {
   .specifications-text::before {
     left: 15%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .specifications-text::before {
+    left: 20%;
   }
 }
 
