@@ -70,10 +70,13 @@
 
 .swiper-img__container {
 	max-height: 100vh;
+	width: 100vw;
+	text-align: center;
 }
 
 .slider-img {
 	margin: 0 auto;
+	width: 100% !important;
 }
 
 .swiper-img {}
