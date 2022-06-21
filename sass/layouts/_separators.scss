@@ -8,33 +8,15 @@
 .title__content {
 	text-align: center;
 	color: $color-dark;
-	font-family: "Hind", Sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 1.4rem;
 	font-weight: 600;
-	margin: 20px;
+	margin: 10px;
 	line-height: 150%;
 }
 
-.purpose__title {
-	color: $contrast-color;
-	font-size: 1.6rem;
-}
 
-.purpose__text {
-	padding-bottom: 20px;
-	text-align: center;
-	color: $color-dark;
-	line-height: 3rem;
-}
 
-.separator-smoll {
-	color: $color-text;
-	font-family: "Hind", Sans-serif;
-	font-size: 1.4rem;
-	font-weight: 600;
-
-	text-align: center;
-}
 
 .separator-image__container {
 	//width: 100vw;

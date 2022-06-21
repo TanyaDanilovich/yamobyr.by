@@ -141,3 +141,14 @@ const minimise = document.querySelectorAll('.minimise')
 minimise.forEach((el) => { el.addEventListener('click', (event) => { showShortReview(event.target) }) })
 //показ полного отзыва и сокращенного отзыва
 
+
+
+
+const sliderText = document.querySelectorAll('.slider__text__container')
+
+mainSwiper.on('afterInit', setTimeout(() => { sliderText.forEach((el) => { el.classList.add('move') }) }, 500))
+mainSwiper.on('slideChangeTransitionStart', () => {
+	sliderText.forEach((el) => { el.classList.remove('move') });
+	setTimeout(() => { sliderText.forEach((el) => { el.classList.add('move') }) }, 500)
+
+});

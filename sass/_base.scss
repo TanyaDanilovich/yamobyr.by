@@ -87,7 +87,7 @@ body {
 	font-size: 1.6rem;
 	font-style: normal;
 	font-weight: 400;
-	font-family: "Archivo", Verdana, sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	letter-spacing: 1px;
 	text-align: left;
 	color: $color-text;
@@ -107,7 +107,7 @@ body {
 
 h1 {
 	color: $contrast-color;
-	font-family: "Hind", Sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 2.5rem;
 	line-height: 4rem;
 	font-weight: 600;
@@ -119,7 +119,7 @@ h1 {
 
 h2 {
 	color: $color-secondary;
-	font-family: "Hind", Sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 2.5rem;
 	line-height: 4rem;
 	font-weight: 600;
@@ -133,7 +133,7 @@ h2 {
 
 h3 {
 	color: $contrast-color;
-	font-family: "Hind", Sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 2.2rem;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -142,7 +142,7 @@ h3 {
 }
 
 h6 {
-	font-family: "Hind", Sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 1.6rem;
 	font-weight: 600;
 	color: $black-color;
@@ -152,7 +152,7 @@ h6 {
 p {
 	text-align: left;
 	color: $color-text;
-	font-family: "Open Sans", Sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	// font-size: 15px;
 	font-weight: 400;
 	text-transform: none;
@@ -167,4 +167,8 @@ p {
 
 .hidden {
 	display: none !important;
+}
+
+.visible {
+	opacity: 1;
 }

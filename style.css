@@ -98,7 +98,7 @@ body {
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
-  font-family: "Archivo", Verdana, sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   letter-spacing: 1px;
   text-align: left;
   color: #7A7A7A;
@@ -115,7 +115,7 @@ body {
 
 h1 {
   color: #FE7012;
-  font-family: "Hind", Sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 2.5rem;
   line-height: 4rem;
   font-weight: 600;
@@ -126,7 +126,7 @@ h1 {
 
 h2 {
   color: #54595F;
-  font-family: "Hind", Sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 2.5rem;
   line-height: 4rem;
   font-weight: 600;
@@ -140,7 +140,7 @@ h2 {
 
 h3 {
   color: #FE7012;
-  font-family: "Hind", Sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 2.2rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -149,7 +149,7 @@ h3 {
 }
 
 h6 {
-  font-family: "Hind", Sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.6rem;
   font-weight: 600;
   color: #000;
@@ -159,7 +159,7 @@ h6 {
 p {
   text-align: left;
   color: #7A7A7A;
-  font-family: "Open Sans", Sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   text-transform: none;
   font-style: normal;
@@ -174,8 +174,12 @@ p {
   display: none !important;
 }
 
+.visible {
+  opacity: 1;
+}
+
 .button {
-  font-family: "Hind", Sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.4rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -257,7 +261,7 @@ body {
 }
 
 header {
-  font-family: "Hind", Sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -334,8 +338,8 @@ header {
 #header-row__button {
   text-align: right;
   font-size: 1.4rem;
-  letter-spacing: 2px;
-  font-weight: 300;
+  letter-spacing: 1.5px;
+  font-weight: 600;
   margin-top: 20px;
 }
 @media screen and (min-width: 769px) {
@@ -412,7 +416,7 @@ header {
   font-weight: 500;
 }
 .logo-text:first-child {
-  font-weight: 600;
+  font-weight: 700;
   padding-bottom: 10px;
 }
 
@@ -485,7 +489,7 @@ header {
 .menu__element {
   color: #fff;
   padding: 15px 13px 14px 14px;
-  font-family: Archivo, sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: normal;
   line-height: 130%;
   letter-spacing: 2px;
@@ -600,7 +604,7 @@ header {
 .slider__button {
   background: #979797;
   width: 40px;
-  opacity: 0.5;
+  opacity: 0;
 }
 .slider__button:hover {
   background: #000;
@@ -632,12 +636,14 @@ header {
 
 .slider-img__container {
   text-align: center;
+  position: relative;
 }
 
 .swiper-img__container {
   max-height: 100vh;
   width: 100vw;
   text-align: center;
+  position: relative;
 }
 
 .slider-img {
@@ -649,6 +655,43 @@ header {
   position: relative;
 }
 
+.slider__text__container {
+  position: absolute;
+  left: 10%;
+  bottom: 5%;
+  padding: 10px 15px;
+  width: 80%;
+  background: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+}
+
+.move {
+  animation: move 1s ease-out forwards;
+}
+
+@keyframes move {
+  from {
+    bottom: 10%;
+    opacity: 0;
+  }
+  to {
+    bottom: 30%;
+    opacity: 1;
+  }
+}
+.slider__text__title {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #FE7012;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.slider__text {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #303a45;
+}
+
 .separator {
   background-color: #f5f6f6;
   padding: 10px 0;
@@ -658,31 +701,11 @@ header {
 .title__content {
   text-align: center;
   color: #303a45;
-  font-family: "Hind", Sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.4rem;
   font-weight: 600;
-  margin: 20px;
+  margin: 10px;
   line-height: 150%;
-}
-
-.purpose__title {
-  color: #FE7012;
-  font-size: 1.6rem;
-}
-
-.purpose__text {
-  padding-bottom: 20px;
-  text-align: center;
-  color: #303a45;
-  line-height: 3rem;
-}
-
-.separator-smoll {
-  color: #7A7A7A;
-  font-family: "Hind", Sans-serif;
-  font-size: 1.4rem;
-  font-weight: 600;
-  text-align: center;
 }
 
 .separator-image__container {
@@ -757,10 +780,11 @@ header {
 .servises__item__content {
   padding: 25px 15px 35px;
   color: #54595F;
-  font-weight: 900;
+  font-weight: 600;
   font-size: 1.6rem;
   text-transform: uppercase;
   line-height: 2.5rem;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .servises__button {
@@ -794,14 +818,12 @@ header {
 
 .skills__content {
   max-width: 1200px;
-  padding: 15px;
 }
 
 .skills__item-text {
   font-size: 1.6rem;
   color: #fff;
   text-align: center;
-  padding: 30px;
 }
 @media screen and (min-width: 769px) {
   .skills__item-text {
@@ -848,6 +870,7 @@ h3 {
   background-color: #FE7012;
   border-radius: 50%;
   align-self: center;
+  margin: 10px 0;
 }
 @media screen and (min-width: 1000px) {
   .skills-svg__container {
@@ -891,7 +914,6 @@ h3 {
 }
 
 .skills__inner__content {
-  padding: 20px;
   width: calc(100% - 60px);
   margin: 0 auto;
 }
@@ -925,7 +947,7 @@ h3 {
 .specifications {
   text-align: left;
   color: #303a45;
-  font-family: "Open Sans", Sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.643em;
@@ -1001,7 +1023,7 @@ h4 {
 }
 
 .reviews__container {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.4rem;
 }
 
@@ -1151,7 +1173,7 @@ h4 {
 }
 
 .user-name {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.2rem;
   font-weight: bold;
   color: #54595F;
@@ -1423,7 +1445,7 @@ h5 {
   width: calc(50% - 10px);
   display: flex;
   flex-direction: column;
-  font-family: "Archivo", Sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.3rem;
 }
 @media screen and (min-width: 1000px) {
