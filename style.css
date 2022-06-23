@@ -48,6 +48,7 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
+  overflow: overlay;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -609,6 +610,11 @@ header {
 .slider__button:hover {
   background: #000;
 }
+@media screen and (min-width: 769px) {
+  .slider__button {
+    opacity: 1;
+  }
+}
 
 .swiper-button-prev::after {
   position: absolute;
@@ -664,12 +670,31 @@ header {
   background: rgba(255, 255, 255, 0.8);
   opacity: 0;
 }
-
-.move {
-  animation: move 1s ease-out forwards;
+@media screen and (min-width: 425px) {
+  .slider__text__container {
+    padding: 15px 20px;
+    width: 70%;
+    left: 15%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .slider__text__container {
+    padding: 20px 30px;
+    width: 60%;
+    left: 15%;
+  }
 }
 
-@keyframes move {
+.move {
+  animation: moveMobile 1s ease-out forwards;
+}
+@media screen and (min-width: 769px) {
+  .move {
+    animation: moveTablet 1s ease-out forwards;
+  }
+}
+
+@keyframes moveMobile {
   from {
     bottom: 10%;
     opacity: 0;
@@ -679,12 +704,23 @@ header {
     opacity: 1;
   }
 }
+@keyframes moveTablet {
+  from {
+    bottom: 10%;
+    opacity: 0;
+  }
+  to {
+    bottom: 37%;
+    opacity: 1;
+  }
+}
 .slider__text__title {
   font-family: "Source Sans Pro", sans-serif;
   color: #FE7012;
   text-transform: uppercase;
   font-weight: 600;
   padding-bottom: 10px;
+  text-align: center;
 }
 
 .slider__text {
@@ -797,7 +833,6 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  padding: 60px 0;
 }
 .skills::before {
   content: "";
@@ -814,6 +849,7 @@ header {
   margin: 0 auto;
   text-align: center;
   color: #fff;
+  padding: 10px;
 }
 
 .skills__content {
@@ -854,7 +890,7 @@ h3 {
   display: flex;
   position: relative;
   flex-direction: column;
-  padding: 15px;
+  padding: 30px 15px;
   width: 100%;
 }
 @media screen and (min-width: 769px) {
@@ -1435,9 +1471,7 @@ h5 {
 .footer-top {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 10px;
   justify-content: space-between;
-  padding: 0 10px;
 }
 
 .footer-top__column {
@@ -1487,10 +1521,11 @@ h5 {
   content: "";
   width: 6px;
   height: 6px;
-  border-radius: 50%;
-  background: #FE7012;
-  top: 8px;
+  border-bottom: 3px solid #FE7012;
+  border-right: 3px solid #FE7012;
+  top: 6px;
   left: 0;
+  transform: rotate(-45deg);
 }
 
 .footer-img {
@@ -1498,7 +1533,7 @@ h5 {
 }
 
 .footer-tel {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: 900;
   margin: 15px 0;
 }

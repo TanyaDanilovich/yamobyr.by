@@ -30,6 +30,10 @@
 	&:hover {
 		background: $black-color;
 	}
+
+	@include media-tablet {
+		opacity: 1;
+	}
 }
 
 .swiper-button-prev {
@@ -93,13 +97,29 @@
 	width: 80%;
 	background: rgba($white-color, $alpha: 0.8);
 	opacity: 0;
+
+	@include media-random(425px) {
+		padding: 15px 20px;
+		width: 70%;
+		left: 15%;
+	}
+
+	@include media-tablet {
+		padding: 20px 30px;
+		width: 60%;
+		left: 15%;
+	}
 }
 
 .move {
-	animation: move 1s ease-out forwards;
+	animation: moveMobile 1s ease-out forwards;
+
+	@include media-tablet {
+		animation: moveTablet 1s ease-out forwards;
+	}
 }
 
-@keyframes move {
+@keyframes moveMobile {
 	from {
 		bottom: 10%;
 		opacity: 0;
@@ -111,12 +131,25 @@
 	}
 }
 
+@keyframes moveTablet {
+	from {
+		bottom: 10%;
+		opacity: 0;
+	}
+
+	to {
+		bottom: 37%;
+		opacity: 1;
+	}
+}
+
 .slider__text__title {
 	font-family: 'Source Sans Pro', sans-serif;
 	color: $contrast-color;
 	text-transform: uppercase;
 	font-weight: 600;
 	padding-bottom: 10px;
+	text-align: center;
 }
 
 .slider__text {

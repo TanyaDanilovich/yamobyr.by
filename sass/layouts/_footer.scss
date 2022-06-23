@@ -26,9 +26,9 @@ h5 {
 .footer-top {
 	display: flex;
 	flex-wrap: wrap;
-	column-gap: 10px;
+	//column-gap: 10px;
 	justify-content: space-between;
-	padding: 0 10px;
+	//padding: 0 10px;
 }
 
 .footer-top__column {
@@ -77,10 +77,11 @@ h5 {
 		content: '';
 		width: 6px;
 		height: 6px;
-		border-radius: 50%;
-		background: $contrast-color;
-		top: 8px;
+		border-bottom: 3px solid $contrast-color;
+		border-right: 3px solid $contrast-color;
+		top: 6px;
 		left: 0;
+		transform: rotate(-45deg);
 	}
 }
 
@@ -89,7 +90,7 @@ h5 {
 }
 
 .footer-tel {
-	font-size: 1.6rem;
+	font-size: 1.3rem;
 	font-weight: 900;
 	margin: 15px 0;
 
