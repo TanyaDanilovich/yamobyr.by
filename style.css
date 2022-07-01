@@ -438,6 +438,58 @@ header {
   color: #fff !important;
 }
 
+.overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.callback-form__container {
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  top: 20%;
+  z-index: 100;
+}
+
+.callback-form {
+  text-align: center;
+  padding: 10% 0;
+  position: relative;
+}
+.callback-form::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(51, 51, 51, 0.9) url("../../asetss/gif/loading.gif") center/50px no-repeat;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-out;
+}
+.callback-form._sending::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-label {
+  margin-bottom: 20px;
+}
+
+.modal-tel {
+  margin: 20px 0;
+}
+
+.callback-form ._error {
+  box-shadow: 0 0 5px red;
+}
+
 .navigation__content {
   background-color: #FE7012;
   padding: 20% 15%;
@@ -1475,7 +1527,7 @@ h5 {
 }
 
 .footer-top__column {
-  margin-top: 40px;
+  margin-top: 40px auto 0;
   width: calc(50% - 10px);
   display: flex;
   flex-direction: column;
@@ -1485,7 +1537,12 @@ h5 {
 @media screen and (min-width: 1000px) {
   .footer-top__column {
     padding-left: 30px;
-    width: calc(25% - 10px);
+    width: calc(25% - 10px) !important;
+  }
+  .footer-top__column:nth-child(3) {
+    padding-left: 30px;
+    width: calc(25% - 10px) !important;
+    margin: 0 !important;
   }
 }
 @media screen and (min-width: 769px) {
@@ -1495,7 +1552,13 @@ h5 {
 }
 @media screen and (min-width: 380px) {
   .footer-top__column {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 425px) {
+  .footer-top__column:nth-child(3) {
+    width: 35%;
+    margin-left: auto;
   }
 }
 
@@ -1515,6 +1578,7 @@ h5 {
 .before {
   position: relative;
   padding-left: 20px;
+  font-size: 1.5rem;
 }
 .before::before {
   position: absolute;
@@ -1540,6 +1604,11 @@ h5 {
 @media screen and (min-width: 380px) {
   .footer-tel {
     font-size: 1.4rem;
+  }
+}
+@media screen and (min-width: 424px) {
+  .footer-tel {
+    font-size: 1.6rem;
   }
 }
 

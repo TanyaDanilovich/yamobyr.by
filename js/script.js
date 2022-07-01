@@ -150,5 +150,4 @@ mainSwiper.on('afterInit', setTimeout(() => { sliderText.forEach((el) => { el.cl
 mainSwiper.on('slideChangeTransitionStart', () => {
 	sliderText.forEach((el) => { el.classList.remove('move') });
 	setTimeout(() => { sliderText.forEach((el) => { el.classList.add('move') }) }, 500)
-
 });

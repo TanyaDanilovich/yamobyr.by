@@ -32,12 +32,21 @@ h5 {
 }
 
 .footer-top__column {
-	margin-top: 40px;
+	margin-top: 40px auto 0;
 	width: calc(50% - 10px);
+
+
+
 
 	@include media-random(1000px) {
 		padding-left: 30px;
-		width: calc(25% - 10px);
+		width: calc(25% - 10px) !important;
+
+		&:nth-child(3) {
+			padding-left: 30px;
+			width: calc(25% - 10px) !important;
+			margin: 0 !important;
+		}
 	}
 
 	display: flex;
@@ -51,7 +60,14 @@ h5 {
 	}
 
 	@include media-random(380px) {
-		font-size: 1.2rem;
+		font-size: 1.4rem;
+	}
+
+	@include media-random(425px) {
+		&:nth-child(3) {
+			width: 35%;
+			margin-left: auto;
+		}
 	}
 }
 
@@ -71,6 +87,7 @@ h5 {
 .before {
 	position: relative;
 	padding-left: 20px;
+	font-size: 1.5rem;
 
 	&::before {
 		position: absolute;
@@ -96,6 +113,10 @@ h5 {
 
 	@include media-random(380px) {
 		font-size: 1.4rem;
+	}
+
+	@include media-random(424px) {
+		font-size: 1.6rem;
 	}
 }
 
