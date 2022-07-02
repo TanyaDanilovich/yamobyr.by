@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="sweetalert.min.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -789,9 +790,57 @@
 					<div class="all-reviews__container">
 						<!--  ONE USER START -->
 
+
+
+
+
+						<div class="review-swiper swiper">
+							<div class="review-swiper-wrapper swiper-wrapper">
+								<div class="review-swiper-slide swiper-slide">
+									<div class="review-slide__content">
+										<div class="review__main__container">
+											<div class="user-review__container">
+												<div class="user-review-item"><span class="user-letter">E</span><span
+														class="user-block">
+														<div class="user-name">Eugene Andrusevich</div>
+													</span></div>
+											</div>
+											<div class="user-review__container">
+												<p class="short-review">Пользовался услугами Александра несколько раз. Бурили сваи
+													под фундамент, копали траншеи
+													под фундамент. Теплотрассу ...</p><span class="read-then">Читать далее</span>
+												<p class="long-review hidden">Пользовался услугами Александра несколько раз. Бурили
+													сваи под фундамент, копали
+													траншеи под фундамент. Теплотрассу закопали, воду от скважины
+													провели.Электрокабель закопали.Есть гидромолот, и
+													его тоже успешно использовали для раскалывания бетонных блинчиков.Все
+													понравилось.Качественно и оперативно</p>
+												<span class="minimise hidden">Свернуть</span>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+
+							<div class="swiper-pagination">
+								<span class="swiper-pagination-bullet"></span>
+								<span class="swiper-pagination-bullet"></span>
+								<span class="swiper-pagination-bullet"></span>
+								<span class="swiper-pagination-bullet"></span>
+								<span class="swiper-pagination-bullet"></span>
+								<span class="swiper-pagination-bullet"></span>
+								<span class="swiper-pagination-bullet"></span>
+							</div>
+
+						</div>
+
+
+
+
+
 						<!--  ONE USER END -->
-
-
 					</div>
 				</div>
 			</div>
@@ -978,10 +1027,10 @@
 			<span class="arrow-up"></span>
 		</div>
 	</a>
-	<section class="callback-form-section">
+	<section class="callback-form-section hidden">
 		<div class="overlay">
 			<div class="callback-form__container">
-				<form action="#" id="callback" class="callback-form">
+				<form id="callback" class="callback-form">
 					<label for="callback" class="modal-label">Заказ обратного звонка</label>
 					<input type="tel" class="modal-tel _req" name="phone" id="modal-client-tel"
 						placeholder="Номер телефона с кодом">
@@ -995,7 +1044,9 @@
 	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 	<script src="./js/script.js" type="module"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="./telegramform/telegramform.js"></script>
+	<script src="./js/form.js"></script>
+	<script src="./js/sweetalert.min.js"></script>
+
 </body>
 
 </html>
