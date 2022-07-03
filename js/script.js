@@ -74,6 +74,8 @@ const symbolCount = (width) => {
 }
 
 const createReview = ({ userName, longReview }) => {
+	const reviewSliderSlide = createElement('div', 'review-swiper-slide');
+	reviewSliderSlide.classList.add('swiper-slide');
 
 	const mainReviewContainer = createElement('div', 'review__main__container');
 	const userReviewContainer_first = createElement('div', 'user-review__container');
@@ -109,14 +111,33 @@ const createReview = ({ userName, longReview }) => {
 	userReviewContainer_second.append(minimise);
 	mainReviewContainer.append(userReviewContainer_second)
 
-	return mainReviewContainer;
+	reviewSliderSlide.append(mainReviewContainer);
+	return reviewSliderSlide;
 }
 
-const allReviewsContainer = document.querySelector('.all-reviews__container')
+const reviewSwiperWrapper = document.querySelector('.review-swiper-wrapper')
 
 reviews.forEach((el) => {
-	allReviewsContainer.append(createReview(el))
+	reviewSwiperWrapper.append(createReview(el))
 })
+
+function initReviewSlider() {
+	if (window.screen.width) { };
+}
+
+
+
+
+const reviewSwiper = new Swiper('.review-swiper', {
+	slidesPerView: 2,
+	spaceBetween: 30,
+
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	},
+	loop: true,
+});
 
 
 //показ полного отзыва и сокращенного отзыва
@@ -143,7 +164,7 @@ minimise.forEach((el) => { el.addEventListener('click', (event) => { showShortRe
 
 
 
-
+//Анимированный текст
 const sliderText = document.querySelectorAll('.slider__text__container')
 
 mainSwiper.on('afterInit', setTimeout(() => { sliderText.forEach((el) => { el.classList.add('move') }) }, 500))
@@ -151,3 +172,27 @@ mainSwiper.on('slideChangeTransitionStart', () => {
 	sliderText.forEach((el) => { el.classList.remove('move') });
 	setTimeout(() => { sliderText.forEach((el) => { el.classList.add('move') }) }, 500)
 });
+
+
+//Отправка форм
+const callbackButton = document.getElementById('header-row__button');
+callbackButton.addEventListener('click', showModal);
+
+function showModal() {
+	const callbackForm = document.querySelector('.callback-form-section');
+	callbackForm.classList.remove('hidden');
+	document.querySelector('.body').classList.add('no-scroll')
+	const modalButton = document.querySelector('.modal__button');
+	modalButton.addEventListener('click', () => {
+		callbackForm.classList.add('hidden');
+		document.querySelector('.body').classList.remove('no-scroll')
+		document.getElementById('callback').reset();
+	})
+	const closeButton = document.querySelector('.close-button');
+	closeButton.addEventListener('click', () => {
+		document.getElementById('callback').reset();
+		callbackForm.classList.add('hidden');
+		document.querySelector('.body').classList.remove('no-scroll');
+	})
+}
+

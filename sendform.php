@@ -1,19 +1,20 @@
 <?php
 //Сбор данных из полей формы. 
-$name = $_POST['name'];// Берём данные из input c атрибутом name="name"
+$message = $_POST['message'];// Берём данные из input c атрибутом name="name"
 $phone = $_POST['phone']; // Берём данные из input c атрибутом name="phone"
-$email = $_POST['mail']; // Берём данные из input c атрибутом name="mail"
+$email = $_POST['e-mail']; // Берём данные из input c атрибутом name="mail"
+$name = $_POST['names'];
 
-$token = "1299894601:AAG1s-oE3AnZDbZJnV0ybyBAOO4uLADfEaY"; // Тут пишем токен
-$chat_id = "-460863116"; // Тут пишем ID группы, куда будут отправляться сообщения
-$sitename = "belecky.online"; //Указываем название сайта
+$token = "5550828888:AAE30nkoMU9-rHGPbSX0w-oacm1KlqdxQ5Q"; // Тут пишем токен
+$chat_id = "-632120399"; // Тут пишем ID группы, куда будут отправляться сообщения
+$sitename = "miniarenda"; //Указываем название сайта
 
 $arr = array(
-
-  'Заказ с сайта: ' => $sitename,
-  'Имя: ' => $name,
-  'Телефон: ' => $phone,
-  'Почта' => $email
+	'Заказ с сайта: ' => $sitename,
+	'Имя: ' => $name,  
+	'Телефон: ' => $phone,
+	'Сообщение: ' => $message,
+	'Почта' => $email
 );
 
 foreach($arr as $key => $value) {
@@ -21,5 +22,5 @@ foreach($arr as $key => $value) {
 };
 
 $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
-
+mail('daauto@tut.by',$name,$txt);
 ?>

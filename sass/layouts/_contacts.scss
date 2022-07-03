@@ -96,3 +96,8 @@ textarea {
 	width: 200px;
 	margin: 50px auto 20px;
 }
+
+.contact__form {
+	display: flex;
+	flex-direction: column;
+}
